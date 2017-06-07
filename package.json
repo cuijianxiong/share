@@ -1,0 +1,27 @@
+{
+  "name": "share",
+  "version": "1.0.0",
+  "description": "NodePPT",
+  "main": "app.js",
+  "scripts": {
+    "init": "npm install -g nodeppt",
+    "start": "nodeppt start -p 9988"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenX911/share.git"
+  },
+  "keywords": [
+    "node",
+    "ppt"
+  ],
+  "author": "gy.wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StevenX911/share/issues"
+  },
+  "homepage": "https://github.com/StevenX911/share#readme",
+  "devDependencies": {
+    "nodeppt": "^1.4.2"
+  }
+}
