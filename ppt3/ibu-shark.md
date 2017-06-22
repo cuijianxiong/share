@@ -23,25 +23,44 @@ usemathjax: no
 <img src="/img/shark-server-v2.png" style="margin: 0 auto;width:678px;height:602px;" />
 
 [slide]
-# Shark Portal 功能模块
+# 功能模块
+## [Shark Portal](#5)
+## [IBU Mobile Service](#6)
+## [IBU Shark Service](#7)
+## [Shark Sketch plugin](#8)
+## [Shark JS SDK](#9)
+## [Shark Chrome Plugin](#10)
+## [Shark JAVA & .NET SDK](#11)
+
+[slide]
+# Shark Portal
 <img src="/img/shark-portal-com.png" style="margin: 0 auto;width:1035px;height:590px;" />
 
 [slide]
 # IBU Mobile Service
 ## 允许外网访问，接入Redis缓存服务
 ```html
-http://m.ctrip.com/restapi/soa2/12110/json/getTranslationContentByAppIDAndStatus
-http://m.ctrip.com/restapi/soa2/12110/json/getTranslationContentPublishByAppIdAndStatusOrVersion
+查询列表：http://m.ctrip.com/restapi/soa2/12110/json/getTranslationContentByAppIDAndStatus
+获取增量：http://m.ctrip.com/restapi/soa2/12110/json/getTranslationContentPublishByAppIdAndStatusOrVersion
+更新翻译：http://m.ctrip.com/restapi/soa2/12110/bjjson/updatetranslationcontentbyid
+翻译历史：http://m.ctrip.com/restapi/soa2/12110/bjjson/gettranslationhistorylistbytranspkid
+插件登录：http://m.ctrip.com/restapi/soa2/12110/bjjson/login
 ```
 [slide]
 # IBU Shark Service
 ## 仅支持内网访问
 
 [slide]
-# Sketch plugin
+# Shark Sketch plugin
+
+* Installing Plugins
+- [Download the ZIP file](http://git.dev.sh.ctripcorp.com/ibu/ibu-sketch-i18n-editor/repository/archive.zip?ref=master) and unzip
+- Open `IBUI18nEditor.sketchplugin`
+* How to
+* [Video Demo](https://cdrive.cloud.ctripcorp.com/s/7M7gdB54JL5U31e)
 
 [slide]
-# JS SDK
+# Shark JS SDK
 ```html
 <input type="hidden" id="shark_appid" value="10000" />
 <input type="hidden" id="shark_language" value="en-US" />
@@ -55,13 +74,15 @@ $(function(){
 });
 ```
 <img src="/img/js-sdk.png" style="margin: 0 auto;width:653px;height:168px;" />
+<img src="/img/shark-localstorage.png" style="margin: 0 auto;width:527px;height:232px;" />
 
 [slide]
-# JAVA & .NET SDK
-
-[slide]
-# Chrome Plugin
+# Shark Chrome Plugin
 <img src="/img/shark-chrome-plugin.png" style="margin: 0 auto;width:1563px;height:982px;" />
+
+[slide]
+# Shark JAVA & .NET SDK
+http://conf.ctripcorp.com/display/gjwz/01.+Shark+SDK
 
 [slide]
 # Q&A
