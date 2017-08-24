@@ -2,7 +2,7 @@
 
 ## 先看截图吧，这是一个基于Express的中型Node项目。
 
-![image](./node-express-code-structrue.png)
+![image](./image/node-express-code-structrue.png)
 *这是一个真实在线上运行项目的大致目录*
 
 ## 项目结构
