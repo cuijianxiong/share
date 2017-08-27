@@ -1,0 +1,78 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" >
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="../css/style.css" >
+
+</head>
+<body>
+<div class="loginwrapper">
+    <div class="login">
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="regionContent">other</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="regionItem"><a href="#">cn1</a></li>
+                    <li class="regionItem"><a href="#">cn2</a></li>
+                    <li class="regionItem"><a href="#">cn3</a></li>
+                    <li class="regionItem"><a href="#">cn4</a></li>
+                    <li class="regionItem"><a href="#">cn5</a></li>
+                    <li class="regionItem"><a href="#">other</a></li>
+                </ul>
+            </div>
+        </form>
+        <p class="loginTip" style="display: none">username or password is wrong!</p>
+        <button type="button" class="btn btn-primary btn-sm loginBtn" id="loginBtn">Login</button>
+    </div>
+</div>
+<div class="listPage"></div>
+<template id="content">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                    <h2>Shark Plugin</h2> 
+                    <button type="button" class="btn btn-success " id="doshark">Shark! Shark!</button>
+                    <button type="button" class="btn btn-warning " id="loginout">logout</button>
+                    <hr />
+                    <table class="table table-condensed table-hover table-bordered">
+                    </table>
+                    <div class="form-group">
+                        <label for="key">TransKey</label>
+                        <input type="text" class="form-control" id="key" placeholder="key" readonly>
+                        <input type="hidden" id="value">
+                    </div>
+                    <div class="form-group">
+                        <label for="transVaule">TransValue</label>
+                        [<label for="transVaule" id="transVauleLabel" style="color:#3a87ad">Language</label>]
+                        <textarea class="form-control" id="transVaule" placeholder="transValue"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="Description">Description</label>
+                        <textarea class="form-control" id="description" placeholder="description"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-danger " id="save">Save!!!</button>
+                    <button type="button" class="btn btn-primary " id="preview">preview</button>
+                    <button type="button" class="btn btn-primary " id="discard">discard</button>
+                </div>
+        </div>        
+    </div>
+</template>
+<div id="mask" class="mask" style="display:none;">
+    <div id="message" class="message">保存成功</div>
+</div>
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{background:#F7F8FA;padding: 0px;margin: 0px }
+    .header{height: 50px;background:#0F88EB;display: flex;color: white}
+    .left,.right{flex: 0 0 100px;line-height: 50px;font-size: 20px;text-align: center}
+    .title{flex: 1;line-height: 50px;font-size: 30px;text-align: center}
+    .tip{line-height: 50px;font-size: 30px;background: #F7F8FA;color: #666666}
+    .inputContent{background: white;padding: 10px}
+    .inputWrapper{height: 100px;color: #666}
+    .inputWrapper input[type="text"]{display: inline-block;border: none;border-bottom:1px solid #ccc;width: 100%;height: 50px;line-height: 50px;font-size: 30px;outline: none;margin-top: 50px}
+    .inputWrapper input[type="radio"]{display: inline-block;margin-top: 50px}
+    .footer{background:#F7F8FA}
+    .footer h3{line-height: 40px;font-size: 30px}
+    .footer p{color: #666}
+    #pageID{display: none}
+    #language{display: none}
+    #AppID{display: none}
+</style>
+<body>
+<!--<label id="language">ja-JP</label>-->
+<div class="wrapper">
+    <div class="header">
+        <span id="key-demo-done" class="left" data-key="key.test.done">Done-v11</span>
+        <span id="key-demo-passener" class="title" data-key="key.test.addPassenger">Passenger Info</span>
+        <span id="key-demo-change" class="right" data-key="key.填写页.passengerInfo">Change1</span>
+    </div>
+    <div class="content">
+        <p class="tip">Please enter your name as it appears on your ID</p>
+        <div class="inputContent">
+            <div class="inputWrapper">
+                <p>Ticket Type</p>
+                <input type="radio" checked="checked" name="type" value="adult" />
+                Adult:
+                <input type="radio" name="type" value="child" />
+                Child:
+            </div>
+            <div class="inputWrapper">
+                <input type="text" placeholder="Passenger Info" data-key="key.test.addPassenger">
+            </div>
+            <div class="inputWrapper">
+                <input type="text" placeholder="Done">
+            </div>
+            <div class="inputWrapper">
+                <input type="text" placeholder="Change1">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>&lt;i data-key="Child-Ticket-Policy"&gt;Child Ticket Policy&lt;/i&gt;</h3>
+        <p>&lt;i data-key="Each-adult-passenger"&gt;Each adult passenger&lt;/i&gt;</p>
+        <p>
+            <input type="radio" value="1" />
+            &lt;i data-key='resx.onlineaccountresource.v3_orderlist_all'&gt;All&lt;/i&gt;</p>
+        <input type="text" placeholder="&lt;i data-key='resx.onlineaccountresource.v3_orderlist_all'&gt;All&lt;/i&gt;" />
+        <input type="button" value="&lt;i data-key='resx.onlineaccountresource.v3_orderlist_all'&gt;All&lt;/i&gt;" />        
+    </div>
+</div>
+<input type="hidden" id="shark_appid" value="10086" />
+<input type="hidden" id="shark_language" value="en-US" />
+<input type="hidden" id="shark_pageid" value="11" />
+</body>
+</html>
