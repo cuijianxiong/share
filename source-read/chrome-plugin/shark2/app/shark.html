@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="login">
+    <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="regionContent">other</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="regionItem"><a href="#">cn1</a></li>
+                <li class="regionItem"><a href="#">cn2</a></li>
+                <li class="regionItem"><a href="#">cn3</a></li>
+                <li class="regionItem"><a href="#">cn4</a></li>
+                <li class="regionItem"><a href="#">cn5</a></li>
+                <li class="regionItem"><a href="#">other</a></li>
+            </ul>
+        </div>
+    </form>
+    <p class="loginTip" style="display: none">username or password is wrong!</p>
+    <button type="button" class="btn btn-primary btn-sm loginBtn">Login</button>
+</div>
+<div class="listPage"></div>
+<template id="content">
+    <div class="detailPage">
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Unsaved Changes</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>You have changed the translation,do you want to save changes</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default modalCancel" data-dismiss="modal">Discard</button>
+                        <button type="button" class="btn btn-primary modalConfirm">Save as</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div class="sharkModal">
+            <div class="content">
+                <div class="header">
+                    <span class="miniBtn right">-</span>
+                </div>
+                <div class="main">
+                    <div class="mainTop">
+                        <div class="inputGroup">
+                            <input id="search" type="text">
+                            <span class="icon-search"></span>
+                            <span class="icon-spinner11"></span>
+                            <button type="button" class="btn btn-primary btn-sm loginout">Login out</button>
+                        </div>
+                        <table class="table table-condensed table-hover table-bordered">
+                        </table>
+                        <div class="btn-wrapper">
+                            <button type="button" class="btn btn-primary btn-sm nextPage">next page</button>
+                            <button type="button" class="btn btn-primary btn-sm prePage">previous page</button>
+                        </div>
+                    </div>
+                    <div class="mainFooter">
+                        <div class="nav">
+                            <div class="nav-item keynav text1">Key</div>
+                            <div class="nav-item historynav">History</div>
+                        </div>
+                        <div class="keyContent">
+                            <form>
+                                <div class="form-group">
+                                    <label for="source">Source</label>
+                                    <input type="text" class="form-control" id="source" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="language"><span class="translation">JP</span>Translation</label>
+                                    <textarea class="form-control" id="language"></textarea>
+                                    <!--<input type="text" class="form-control" id="language">-->
+                                </div>
+                                <div class="form-group">
+                                    <label for="comments">Comments</label>
+                                    <textarea class="form-control" id="comments"></textarea>
+                                    <!--<input type="text" class="form-control" id="comments">-->
+                                </div>
+                            </form>
+                            <div >
+                                <button type="button" class="btn btn-primary btn-sm prev">Prev</button>
+                                <button type="button" class="btn btn-primary btn-sm save">Save</button>
+                                <button type="button" class="btn btn-primary btn-sm discard">Discard</button>
+
+                            </div>
+                        </div>
+                        <div class="historyContent">
+                            <ul class="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/shark-plugin-sdk.js"></script>
+
+</body>
+</html>

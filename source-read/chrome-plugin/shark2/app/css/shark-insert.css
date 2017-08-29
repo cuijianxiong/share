@@ -1,0 +1,3 @@
+/*input.inputhighlight::-webkit-input-placeholder{    color:yellow;!* WebKit browsers *!}input.inputhighlight:-moz-placeholder{    color:yellow;!* Mozilla Firefox 4 to 18 *!}input.inputhighlight::-moz-placeholder{    color:yellow;!* Mozilla Firefox 19+ *!}input.inputhighlight:-ms-input-placeholder{    color:yellow;!* Internet Explorer 10+ *!}*/
+span.shark-highlight{border: 2px dotted red !important;}
+input.shark-input-highlight{border: 2px dotted red !important;}

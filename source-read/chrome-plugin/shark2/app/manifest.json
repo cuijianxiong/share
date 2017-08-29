@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "shark-plugin",
+  "version": "1.3",
+  "description": "sharkExtension",
+  "icons": {
+    "16": "images/custom/icon16.png",
+    "48": "images/custom/icon48.png",
+    "128": "images/custom/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/custom/icon19.png",
+      "38": "images/custom/icon38.png"
+    },
+    "default_title": "shark-plugin",
+    "default_popup": "shark.html"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "js":["js/shark-insert.js"],
+      "css": ["css/shark-insert.css"],
+      "matches":["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "cookies",
+    "http://*/*",
+    "management",
+    "tabs"
+  ]
+
+}
