@@ -1,4 +1,3 @@
-# Share
 
 ## [一天学会Chrome插件开发](./article/2017-08-29.md)
 
