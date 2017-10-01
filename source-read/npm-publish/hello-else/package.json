@@ -1,0 +1,11 @@
+{
+  "name": "hello-else",
+  "version": "1.0.0",
+  "description": "ELSE WEEKLY",
+  "main": "hello-else.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
