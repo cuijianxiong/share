@@ -24,5 +24,8 @@
   "devDependencies": {
     "hello-else": "^1.0.0",
     "nodeppt": "^1.4.2"
+  },
+  "dependencies": {
+    "nodemailer": "^4.4.0"
   }
 }
